@@ -1,0 +1,51 @@
+# Virtual Environment
+venv/**
+.venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# YOLOv5 specific
+yolov5/runs/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Local development settings
+.env
+
+# System Files
+.DS_Store
+Thums.db
+
+# Large binary files
+*.dll
+*.pyd
+*.lib
+
+# PyTorch model files
+#*.pth
+#*.pt
+*.bin
+*.onnx
+
+# Specific large files
+venv/Lib/site-packages/cv2/cv2.pyd
+venv/Lib/site-packages/torch/lib/torch_cpu.dll
+venv/Lib/site-packages/torch/lib/dnnl.lib
