@@ -26,7 +26,7 @@ This project implements a car damage detection system using YOLOv5 and Flask. Th
 1. Clone the repository:
    ```bash
    git clone https://github.com/yatharthbhatia/car-damage-analysis.git
-   cd CarDamageAnalysisSepm
+   cd car-damage-analysis
    ```
 
 2. Install YOLOv5 dependencies:
@@ -75,4 +75,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Contributors and maintainers of all dependencies
 
 ---
-© 2024 Yatharth. All Rights Reserved.
