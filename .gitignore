@@ -31,6 +31,13 @@ yolov5/utils/flask_rest_api/
 yolov5/utils/google_app_engine/
 yolov5/utils/loggers/
 
+# Keep essential YOLOv5 files
+!yolov5/models/
+!yolov5/utils/
+!yolov5/data/
+!yolov5/*.py
+!yolov5/requirements.txt
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
