@@ -20,6 +20,16 @@ build/
 
 # YOLOv5 specific
 yolov5/runs/
+yolov5/data/images/
+yolov5/data/scripts/
+yolov5/.github/
+yolov5/classify/
+yolov5/segment/
+yolov5/utils/aws/
+yolov5/utils/docker/
+yolov5/utils/flask_rest_api/
+yolov5/utils/google_app_engine/
+yolov5/utils/loggers/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -40,8 +50,6 @@ Thums.db
 *.lib
 
 # PyTorch model files
-#*.pth
-#*.pt
 *.bin
 *.onnx
 
