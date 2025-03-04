@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage Detection Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container results-container">
+        <h1>Car Damage Detection Results</h1>
+        
+        <div class="results-grid">
+            <div class="image-container">
+                <h3>Original Image</h3>
+                <img src="{{ url_for('static', filename=original_image) }}" alt="Original car image">
+            </div>
+            
+            <div class="image-container">
+                <h3>Detected Damage</h3>
+                <img src="{{ url_for('static', filename=result_image) }}" alt="Damage detection result">
+            </div>
+        </div>
+        
+        <div class="damage-details">
+            <h2>Damage Analysis</h2>
+            {% if damages %}
+                <table class="damage-table">
+                    <thead>
+                        <tr>
+                            <th>Damage Type</th>
+                            <th>Confidence</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for damage in damages %}
+                        <tr>
+                            <td>{{ damage.type }}</td>
+                            <td>{{ damage.confidence }}%</td>
+                            <td>({{ damage.bbox[0] }}, {{ damage.bbox[1] }}) to ({{ damage.bbox[2] }}, {{ damage.bbox[3] }})</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>No damage detected in the image.</p>
+            {% endif %}
+        </div>
+        
+        <div class="actions">
+            <a href="{{ url_for('index') }}" class="back-btn">Analyze Another Image</a>
+        </div>
+    </div>
+</body>
+</html>
