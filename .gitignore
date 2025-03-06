@@ -59,8 +59,8 @@ Thumbs.db
 *.dylib
 
 # PyTorch model files
-*.pt
-*.pth
+#*.pt
+#*.pth
 *.bin
 *.onnx
 
