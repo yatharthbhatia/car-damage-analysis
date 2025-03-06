@@ -18,6 +18,9 @@ build/
 .idea/
 .vscode/
 
+# PyTorch model files
+*.pt
+
 # YOLOv5 specific
 yolov5/runs/
 yolov5/data/images/
@@ -59,8 +62,8 @@ Thumbs.db
 *.dylib
 
 # PyTorch model files
-#*.pt
-#*.pth
+*.pt
+*.pth
 *.bin
 *.onnx
 
