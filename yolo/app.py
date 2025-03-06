@@ -12,7 +12,6 @@ app = Flask(__name__)
 
 device = select_device('cpu')
 
-# Use relative path for model
 MODEL_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models', 'car_damage5', 'weights', 'best.pt')
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"Model file not found at {MODEL_PATH}.")
