@@ -5,7 +5,9 @@
       "src": "yolo/app.py",
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "50mb"
+        "maxLambdaSize": "15mb",
+        "includeFiles": ["yolo/app.py", "yolo/static/**", "yolo/templates/**", "yolo/yolov5s.pt"],
+        "excludeFiles": ["yolo/runs/**", "yolo/data/**", "yolo/classify/**", "yolo/segment/**", "dataset/**", "models/**", "docs/**", "src/**"]
       }
     }
   ],
