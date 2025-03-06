@@ -1,11 +1,12 @@
-# Essential dependencies for car damage detection
-torch>=1.8.0
-torchvision>=0.9.0
-opencv-python>=4.1.1
-numpy>=1.23.5
-flask>=2.0.0
-pillow>=10.3.0
-ultralytics>=8.2.34
-PyYAML>=5.3.1
-tqdm>=4.66.3
-setuptools>=70.0.0
+# Minimal dependencies for car damage detection
+flask==2.0.0
+pillow==10.3.0
+ultralytics==8.0.0
+PyYAML==5.3.1
+tqdm==4.66.3
+setuptools==70.0.0
+numpy==1.24.3
+torch==2.0.0
+torchvision==0.15.1
+opencv-python-headless==4.7.0.72
+gunicorn==20.1.0
