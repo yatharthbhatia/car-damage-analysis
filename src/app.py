@@ -94,4 +94,5 @@ def result():
     return render_template("result.html", original_image="static/original.jpg", result_image="static/result.jpg")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8000)

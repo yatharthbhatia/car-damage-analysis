@@ -1,12 +1,14 @@
 [build]
-  command = "pip install -r requirements.txt"
+  command = "pip install -r requirements.txt && pip install -r yolo/requirements.txt"
   publish = "src"
   functions = "netlify/functions"
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/app"
+  to = "/.netlify/functions/app/:splat"
   status = 200
+  force = true
 
 [build.environment]
   PYTHON_VERSION = "3.9"
+  FLASK_ENV = "production"

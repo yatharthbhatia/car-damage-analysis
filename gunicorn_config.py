@@ -1,0 +1,12 @@
+bind = "0.0.0.0:8000"
+workers = 4
+timeout = 120
+worker_class = "sync"
+keepalive = 5
+max_requests = 1000
+max_requests_jitter = 50
+worker_connections = 1000
+backlog = 2048
+accesslog = "-"
+errorlog = "-"
+loglevel = "info"
