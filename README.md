@@ -52,6 +52,16 @@ This project implements a car damage detection system using YOLOv5 and Flask. Th
 3. Click on the "Detect Damage" button
 4. View the results showing detected damage areas and classifications
 
+## Application Interface
+
+### Upload Page
+![Upload Interface](docs/upload_interface.png)
+
+### Detection Result
+![Detection Result](docs/detection_result.png)
+
+The application provides a user-friendly interface for uploading car images and displays the detection results with highlighted damage areas.
+
 ## Model Training
 
 The damage detection model was trained on a custom dataset using YOLOv5. The training process included:
