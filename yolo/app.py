@@ -51,7 +51,6 @@ def predict():
         # Save original image
         original_image_path = os.path.join(static_dir, "original.jpg")
         cv2.imwrite(original_image_path, img)
-        print(f"Original image saved at {original_image_path}")
 
         # Resize for YOLO
         img_resized = cv2.resize(img, (640, 640))
@@ -83,7 +82,6 @@ def predict():
         # Save processed image
         result_path = os.path.join(static_dir, "result.jpg")
         cv2.imwrite(result_path, img)
-        print(f"Processed image saved at {result_path}")
 
         return redirect(url_for("result"))
 
