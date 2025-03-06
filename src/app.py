@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 device = select_device('cpu')
 
-MODEL_PATH = r"C:\Users\Yatharth\Documents\LEARNING\project\CarDamageAnalysisSepm\models\car_damage5\weights\best.pt"
+MODEL_PATH = r"models/car_damage5/weights/best.pt"
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"Model file not found at {MODEL_PATH}.")
 
