@@ -13,13 +13,21 @@ This project implements a car damage detection system using YOLOv5 and Flask. Th
 -   Detailed damage assessment reports 📊
 
 ## Technologies Used
+ 
+<div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 10px; width: 100%;">
 
--   Python 
--   YOLOv5
--   Flask
--   OpenCV
--   PyTorch
--   HTML/CSS
+
+
+</div>
+<div align="center">
+    <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=yellow" alt="Python" height="30"/>
+    <img src="https://img.shields.io/badge/YOLOv5-000000?style=for-the-badge&logo=pytorch&logoColor=green" alt="YOLOv5" height="30"/>
+    <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=red" alt="Flask" height="30"/>
+    <img src="https://img.shields.io/badge/OpenCV-000000?style=for-the-badge&logo=opencv&logoColor=lightblue" alt="OpenCV" height="30"/>
+    <img src="https://img.shields.io/badge/PyTorch-000000?style=for-the-badge&logo=pytorch&logoColor=orange" alt="PyTorch" height="30"/>
+    <img src="https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" height="30"/>
+    <img src="https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=pink" alt="CSS3" height="30"/>
+</div>
 
 ## Setup Instructions
 
